@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>list</title>
+</head>
+<body>
+        <ul>
+            {% for object in object_list %}
+            <li>{{object.candidate_name}}</li>
+            <li>{{object.mobile_no}}</li>
+            <li>{{object.gender}}</li>
+            <li>{{object.place}}</li>
+            <li>{{object.seat_no}}</li>
+            <li>{{object.fight_time}}</li>
+            <hr/>
+            {% empty %}
+            <li>No objects yet.</li>
+            {% endfor %}
+        </ul>
+</body>
+</html>
